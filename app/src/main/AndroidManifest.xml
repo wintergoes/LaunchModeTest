@@ -18,7 +18,6 @@
             android:taskAffinity="com.zht.car.SingleTaskActivityB"
             android:launchMode="singleTask"/>
         <activity android:name=".SingleTaskActivityA"
-            android:taskAffinity="com.zht.car.SingleTaskActivityA"
             android:launchMode="singleTask"/>
 
 
