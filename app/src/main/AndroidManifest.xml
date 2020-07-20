@@ -13,9 +13,10 @@
         <activity android:name=".SingleTaskActivityD"
             android:taskAffinity="com.zht.car.SingleTaskActivityD"></activity>
         <activity android:name=".SingleTaskActivityC"
-            android:taskAffinity="com.zht.car.SingleTaskActivityA"/>
-        <activity android:name=".SingleTaskActivityB"
             android:taskAffinity="com.zht.car.SingleTaskActivityB"
+            android:launchMode="singleTask"/>
+        <activity android:name=".SingleTaskActivityB"
+            android:taskAffinity="com.zht.car.SingleTaskActivityA"
             android:launchMode="singleTask"/>
         <activity android:name=".SingleTaskActivityA"
             android:launchMode="singleTask"/>
