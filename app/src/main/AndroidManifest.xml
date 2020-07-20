@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zht.car.launchmodetest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SingleTaskActivityD"
+            android:taskAffinity="com.zht.car.SingleTaskActivityD"></activity>
+        <activity android:name=".SingleTaskActivityC"
+            android:taskAffinity="com.zht.car.SingleTaskActivityA"/>
+        <activity android:name=".SingleTaskActivityB"
+            android:taskAffinity="com.zht.car.SingleTaskActivityB"
+            android:launchMode="singleTask"/>
+        <activity android:name=".SingleTaskActivityA"
+            android:taskAffinity="com.zht.car.SingleTaskActivityA"
+            android:launchMode="singleTask"/>
+
+
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".SingleTopWithMultiTaskActivityC"
+            android:taskAffinity="com.zht.car.SingleTopWithMultiTaskActivityC" />
+        <activity android:name=".SingleTopWithMultiTaskActivityB" />
+        <activity android:name=".SingleTopWithMultiTaskActivityA" />
+        <activity android:name=".AActivity" />
+        <activity android:name=".DActivity" />
+        <activity android:name=".SingleInstanceBActivity" />
+        <activity
+            android:name=".SingleInstanceActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".CActivity" />
+        <activity
+            android:name=".BActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
